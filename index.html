@@ -62,17 +62,36 @@
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="form-group">
                   <label for="name">Имя</label>
-                <input type="text" name="name" id="name">
+                <div class="form-field">
+                  <input class="form-input" type="text" name="name" id="name">
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-name">
+                  </use>
+                </svg>
+                </div>
                 </div>
         
                 <div class="form-group">
                   <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel">
+                <div class="form-field">
+                  <input class="form-input" type="tel" name="tel" id="tel">
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-phone">
+                    </use>
+                  </svg>
+                </div>
                 </div>
         
                 <div class="form-group">
                   <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail">
+                <div class="form-field">
+                  <input class="form-input" type="email" name="mail" id="mail">
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-mail">
+                    </use>
+                  </svg>
+                </div>
+          
                 </div>
         
                 <div class="form-group">
@@ -80,17 +99,31 @@
                 <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
                 </div>
         
-                <div class="form-privacy">
-                  <input type="checkbox" name="privacy" value="privacy" id="privacy">
-                <label for="privacy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                </div>
+
+                <label class="form-privacy">
+                  <input class="checkbox" type="checkbox" name="privacy" value="privacy"/>
+                    <svg class="icon-check" width="16" height="15">
+                      <use href="./images/icons.svg#icon-check">
+                      </use>
+                    </svg>
+                  <span>
+                    <span>Соглашаюсь с рассылкой и принимаю</span>
+                    <span>
+                     <a class="privacy-text" href="">Условия договора</a>
+                    </span>
+                  </span>
+                </label>
+
+
               </div>
               <div class="form-button">
                 <button class="form-btn" type="submit">Отправить</button>
               </div>
             </form>
-        
-            <img data-modal-close class="icon-close" src="./images/close.svg" alt="закрыть">
+          <svg data-modal-close class="icon-close" width="30" height="30">
+           <use href="./images/icons.svg#icon-close">
+          </use>
+        </svg>
           </div>
         </div>
   

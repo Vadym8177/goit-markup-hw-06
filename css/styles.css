@@ -867,7 +867,6 @@ textarea {
 }
 
 .form {
-    width: 528px;
     margin-left: auto;
     margin-right: auto;
 
@@ -909,9 +908,9 @@ textarea {
 
 
 .form-group input {
-    padding: 11px;
-
-
+    padding: 11px 42px;
+    width: 100%;
+    cursor: pointer;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -961,6 +960,8 @@ textarea {
 
 .form-group textarea {
     height: 120px;
+    padding-left: 16px;
+    padding-top: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
@@ -970,6 +971,8 @@ textarea {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+    /* padding-left: 16px;
+    padding-top: 12px; */
 
     color: rgba(117, 117, 117, 0.5);
 
@@ -978,17 +981,55 @@ textarea {
 
 .form-privacy {
     display: flex;
-    font-size: 14px;
-    line-height: 1.7;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
     
 
+    font-size: 14px;
+    line-height: 1.7;
+    
+    
     color: var(--title-text-color);
-}
-.form-privacy label {
-    margin-left: 8px;
+    
 }
 
+.form-privacy input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* position: absolute; */
+}
+
+.icon-check {
+    margin-right: 7px;
+
+
+    fill: var(--secondary-text-color);
+    border: 1px solid var(--third-text-color);  
+   
+}
+
+.checkbox:checked + .icon-check {
+    fill: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border: 0;
+}
+.privacy-text {
+    color: var(--accent-color);
+    text-decoration-line: underline;
+
+}
+
+.form-field {
+    display: flex;
+    position: relative;
+    width: 448px;
+}
+.form-icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+}
+  
